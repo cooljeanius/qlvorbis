@@ -13,7 +13,7 @@ There are several broken/non-existent parts at present:
 - the code only supports constant bit rate (CBR) files at present so attempting to QuickLook a variable bit rate (VBR) file with this plugin may make your computer unhappy
 - The things you know, the things you don't know, the things you don't know you don't know … 
 
-###Build Instructions
+### Build Instructions
 In order to build this project, you will need to do the following:
 
 1. Download and build the libogg and libvorbis frameworks from [xiph.org](http://xiph.org/downloads/)
@@ -28,7 +28,7 @@ In order to build this project, you will need to do the following:
 
 ***NOTE:*** When running the .qlgenerator form within Xcode, LLDB occasionally reports that the **the bundle qlvorbis couldn't be loaded**. The debugger error is vague and the system console doesn't report anything meaningful (to me). As a result, I don't have a good answer for the cause, but the problem seems to go away if the libogg and libvorbis frameworks are removed from the project, rebuilt, and then re-added. I see this behavior when using both the release and debug versions of the frameworks.  
 
-###Credits
+### Credits
 This project drew heavily from the following:
 
 - [Dave Dribin](http://www.dribin.org/dave/blog/archives/2009/11/15/rpath/) and [Mike Ash's](http://www.mikeash.com/pyblog/friday-qa-2009-11-06-linking-and-install-names.html) blog articles on OS X framework linking.
@@ -39,5 +39,5 @@ This project drew heavily from the following:
 
 For testing, this project includes Rondo_Alla_Turka.ogg from the Wikipedia [article](http://en.wikipedia.org/wiki/File:Rondo_Alla_Turka.ogg) on Vorbis. This file is from [WikiMedia Commons](http://commons.wikimedia.org/wiki/Main_Page), a freely licensed media repository.
 
-###License
+### License
 This project uses the [MIT License](http://opensource.org/licenses/MIT) for its source code. The libogg and libvorbis frameworks are licensed according to their respective [licenses](http://www.xiph.org/licenses/bsd/) included in each source bundle.
